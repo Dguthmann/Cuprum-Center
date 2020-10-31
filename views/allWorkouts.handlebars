@@ -1,0 +1,10 @@
+<div class="container" id="deletefunction">
+  
+  {{#each workout}}
+  <button class="btn createExercise" data-workout={{this._id}}></button>
+  <div class="row">
+    <button class="btn finishWorkout" data-workout={{this._id}}></button>
+    {{> workout }}
+  </div>
+  {{/each}}
+</div>

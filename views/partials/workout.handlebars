@@ -1,0 +1,28 @@
+{{!-- Modify this modal for each workout-cardio --}}
+<div class="container">
+
+  <div class="card">
+
+    <div class="card-header">
+      {{workoutName}}
+    </div>
+    <div class="card-body">
+
+      {{#each Exercises}}
+      <h5 class="card-title">{{this.exerciseName}}: {{thistypeOf}}</h5>
+      {{#if this.iscardio }}
+      <p>Distance: {{this.distance}}</p>
+      <p>Duration: {{this.duration}}</p>
+      {{else}}
+      <p>Weight: {{this.weight}}</p>
+      <p>Sets: {{this.sets}}</p>
+      <p>Reps: {{this.reps}}</p>
+      {{/if}}
+      {{/each}}
+      <button class="btn finishExercise" data-exercise={{this._id}}>Finish Exercise</button>
+    </div>
+    <div class="card-footer text-muted">
+      Last Updated: {{lastUpdated}}
+    </div>
+  </div>
+</div>
