@@ -78,6 +78,7 @@ TBA
 
 ## Changelog
 
+2020-11-01: Controller Creation, public folder files, deployment
 2020-10-31: ReadME formatting, Views creation  
 2020-10-30: Reviewing code, and frontend planning  
 2020-10-29: Creation of models, and base server file  
